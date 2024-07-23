@@ -1,0 +1,44 @@
+/* app/components/Navbar.module.css */
+.navbar {
+  background-color: #1f1f1f48; /* Initial semi-transparent background */
+  padding: 10px 20px;
+  position: fixed; /* Keeps the navbar at the top of the viewport at all times */
+  top: 0; /* Aligns the navbar to the top */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  width: 100%; /* Ensures the navbar spans the full width of the viewport */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.scrolled {
+  background-color: #1f1f1f; /* Solid background when scrolled */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-transform: lowercase; /* Makes text lowercase */
+  font-family: 'Arial', sans-serif; /* Uses a clean, modern font */
+  font-weight: 600; /* Adds slight boldness for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}

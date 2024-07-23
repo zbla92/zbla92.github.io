@@ -1,0 +1,42 @@
+/* app/components/Portfolio.module.css */
+.container {
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.image:hover {
+  opacity: 0.8;
+}
